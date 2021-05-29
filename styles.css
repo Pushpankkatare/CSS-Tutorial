@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+/*Basic Selectors*/
+body{
+    background: rgb(32, 31, 31);
+    /*background: linear-gradient(rgb(178, 131, 255),rgba(94, 217, 255, 1));*/
+    font-family: sans-serif;
+    /*font-size: 2em; -- Font becomes twice the size*/
+    /* text-transform: capitalize; */
+}
+
+.title{
+    color: rgb(252, 137, 30);
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h2.hello{
+    color: slateblue;
+    text-align: center;
+    font-size: .7cm;
+    margin-bottom: 0px;
+}
+
+#intro{
+    font-weight:bolder;
+    text-align: center;
+}
+.para .hey{
+    color: white;
+    text-align: center;
+}
+.para .oyo{
+    color: white;
+    text-align: center;
+
+}
+.img1{
+    display: block;
+    text-align: center;
+    float:left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.pop{
+    height: 400px;
+}
+.hat{
+    margin:0px;
+    padding: 0mm;
+    text-align: center;
+
+    border:5px solid rgb(90, 204, 156)
+}
+/*Pseudo Selectors*/
+.title:hover{
+    color: white;
+}
+.google:link{
+    color:lightcoral
+}
+.google:visited{
+    color:rgb(90, 204, 156);
+}
+li:nth-child(2){
+    color:tomato;
+}
+
+/*Advanced Selector for the children*/
+.list1 > li:first-child{
+    color: slateblue;
+}
+
+.list1{
+    display: inline-block;
+}
+.list2{
+    display: inline-block;
+}
+/*Advanced Selectors*/
+.title + #intro{
+    color: yellow;
+}
+/*Selector under same parent*/
+textarea ~ input{
+    color: rgb(152, 185, 1);
+}
+
+/*Attribute Selectors*/
+
+ul[class=list1]{
+    color: rgb(90, 204, 156);
+
+}
+
+img[src="lorem_ipsum.jpeg"]{
+    border: 10px solid plum;
+    border-radius: 50px;
+}
+
+img[src^="pics"]{
+    padding: 0px    
+}
+.p1{
+    color: rgb(152, 185, 1);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.p2{
+    display: inline-block;
+    height: 350px;
+    width: 400px;
+    margin: 0 auto;
+    background: url("pics/Lorem-ipsum.png");
+    background-size: cover; 
+    /* or use contain */
+    /* margin: 0 auto; */
+}
+
+
+
+/*Gradients*/
+.p3{
+    height: 400px;
+    width: 70%;
+    background: linear-gradient(to right, red, blue, green, yellow, white);
+    margin: 0 auto;
+}
+.p4{
+    height: 200px;
+    width: 70%;
+    background: linear-gradient(45deg, yellow, white);
+    margin: 100px auto;
+    
+}
+
+.p5{
+    height: 100px;
+    width: 50px;
+    background: radial-gradient(circle, rgb(231, 99, 12) 20%, rgb(26, 205, 211), yellow);
+    margin: 30px auto;
+    padding: 100px;
+}
+
+.list2{
+    color: rgb(186, 126, 201);
+}
+/* 
+Units 
+Absolute units: cm, mm, inch, px
+Relative units: em, percentage, vw(view width), vh,
+
+For height use px or some absolute unit
+And for width use relative units like vw or percentage
+*/
+
+.google{
+    text-decoration: none;
+}
+
+.p6{
+    font-size: 1.25em;
+    /* or we can use px too */
+    font-weight: 400;
+    font-style: italic;
+    color: khaki;
+    font-family: "Nanum Gothic"; 
+}
+
+h3{
+    text-align: center;
+    color: red
+}
+
+.pic2{
+    float: right;
+    border: 5px solid red;
+    text-align: center;
+    padding: 0px;
+    height: 250px;
+    display: inline-block;
+    margin: 20px;
+}
+.ano{
+    height: 250px;
+}
+/* The Box Model */
+.box-model{
+    border: 10px double rgb(197, 101, 101);
+    /* can use solid dotted or  */
+    padding: 10px;
+    margin: auto;
+}
+.toy{
+    margin: 100px auto;
+    border: 10px double rgb(101, 197, 109);
+    text-align: center;
+}
+
+.form1{
+    margin: 10px;
+    display:inline-block;
+    float: right; 
+}
