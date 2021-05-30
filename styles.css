@@ -15,7 +15,7 @@ body{
     text-align: center;
 }
 
-h2.hello{
+.hello{
     color: slateblue;
     text-align: center;
     font-size: .7cm;
@@ -202,3 +202,98 @@ h3{
     display:inline-block;
     float: right; 
 }
+
+.flex-box{
+    padding: 10px;
+    background-color: white;
+    height: 500px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center; /*for vertical alignment of boxes*/
+}
+
+.fb{
+    background-color: hotpink;
+    color: white;
+    margin:3px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+
+
+.grid-box{
+    display:grid;
+    margin:0;
+    padding:0;
+    height:850px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto 400px auto;
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* align-content: center; */
+    /* grid-column-gap: 10px;
+    grid-row-gap: 10px; */
+    grid-gap: 10px 10px;  /*row first column second*/
+}
+
+.cellA{
+    background-color:whitesmoke;
+    color: black;
+    margin:0;
+    /* width:50px; */
+    grid-column: 1/3;
+}
+.cellB{
+    color: Black;
+    background-color: rgb(218, 218, 218);
+    margin:0;
+    /* width:50px; */
+    grid-column: 3/5;
+}
+.cellC{
+    background-color: tomato;
+    color:whitesmoke;
+    margin:0;
+    /* width:100px; */
+}
+.cellD{
+    background-color: whitesmoke;
+    color:black;
+    margin:0;
+    /* width:50px; */
+    grid-column: 2/4;
+}.cellE{
+    background-color: rgb(177, 132, 230);
+    color:whitesmoke;
+    margin:0;
+    /* grid-column: 4/5;
+    grid-row: 2/4; */
+    grid-area: 2/4/4/5;
+    transition: all .5s ease-in-out .25s;
+    /* we can use linear, ease,  */
+}
+.cellF{
+    background-color: whitesmoke;
+    color:black;
+    margin:0;
+    /* width:50px; */
+}
+.cellG{
+    background-color: rgb(140, 209, 209);
+    color:white;
+    margin:0;
+    /* width:50px; */
+    grid-column: 2/4;
+}
+
+
+.cellE:hover{
+    background-color:rgb(196, 166, 231);
+    padding: 20px;
+}
+
+
